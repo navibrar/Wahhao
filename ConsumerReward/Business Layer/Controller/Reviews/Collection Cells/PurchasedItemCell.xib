@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PurchasedItemCell" id="gTV-IL-0wX" customClass="PurchasedItemCell" customModule="ConsumerReward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7Q-nq-Xqb">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="167"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TmE-8S-2ml">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byA-tB-gBa">
+                                <rect key="frame" x="137" y="0.0" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vXq-3c-CwM">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vXq-3c-CwM" firstAttribute="top" secondItem="byA-tB-gBa" secondAttribute="top" id="EWn-vR-i8y"/>
+                                    <constraint firstAttribute="bottom" secondItem="vXq-3c-CwM" secondAttribute="bottom" id="RXj-er-3IQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="TJI-kQ-ns8"/>
+                                    <constraint firstAttribute="width" constant="30" id="Wbu-Za-s3X"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXq-3c-CwM" secondAttribute="trailing" id="vDG-Ur-eQn"/>
+                                    <constraint firstItem="vXq-3c-CwM" firstAttribute="leading" secondItem="byA-tB-gBa" secondAttribute="leading" id="vjE-j6-gBP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TmE-8S-2ml" firstAttribute="leading" secondItem="l7Q-nq-Xqb" secondAttribute="leading" id="1wu-zl-esG"/>
+                            <constraint firstAttribute="trailing" secondItem="TmE-8S-2ml" secondAttribute="trailing" id="8yN-Ac-oWM"/>
+                            <constraint firstAttribute="trailing" secondItem="byA-tB-gBa" secondAttribute="trailing" id="C94-g1-aA5"/>
+                            <constraint firstAttribute="bottom" secondItem="TmE-8S-2ml" secondAttribute="bottom" id="Ssx-fy-sLb"/>
+                            <constraint firstItem="byA-tB-gBa" firstAttribute="top" secondItem="l7Q-nq-Xqb" secondAttribute="top" id="WYf-pP-G5w"/>
+                            <constraint firstAttribute="height" constant="167" id="hb0-de-4F3"/>
+                            <constraint firstItem="TmE-8S-2ml" firstAttribute="top" secondItem="l7Q-nq-Xqb" secondAttribute="top" id="wnh-G3-Goy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWER CHEW DOUBLE B..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLc-oW-6bV">
+                        <rect key="frame" x="0.0" y="173" width="167" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="GiC-1O-028"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NYLABONE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVW-Uu-Tus">
+                        <rect key="frame" x="0.0" y="189" width="167" height="18"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                        <color key="textColor" red="0.71764705880000002" green="0.77647058820000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l7Q-nq-Xqb" secondAttribute="trailing" id="6JF-IW-HFI"/>
+                <constraint firstAttribute="bottom" secondItem="TVW-Uu-Tus" secondAttribute="bottom" id="Dyf-Gm-VqU"/>
+                <constraint firstItem="l7Q-nq-Xqb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FcB-ad-VM5"/>
+                <constraint firstAttribute="trailing" secondItem="QLc-oW-6bV" secondAttribute="trailing" id="N4B-cG-hf9"/>
+                <constraint firstItem="TVW-Uu-Tus" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VbL-f2-x7d"/>
+                <constraint firstItem="QLc-oW-6bV" firstAttribute="top" secondItem="l7Q-nq-Xqb" secondAttribute="bottom" constant="6" id="aPO-Nl-v5k"/>
+                <constraint firstItem="l7Q-nq-Xqb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iYL-Ma-SzS"/>
+                <constraint firstAttribute="trailing" secondItem="TVW-Uu-Tus" secondAttribute="trailing" id="jL6-xr-Aa0"/>
+                <constraint firstItem="TVW-Uu-Tus" firstAttribute="top" secondItem="QLc-oW-6bV" secondAttribute="bottom" id="mOo-YR-pb7"/>
+                <constraint firstItem="QLc-oW-6bV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xzS-j0-VAD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="constraint_ViewContentHeight" destination="hb0-de-4F3" id="T0U-fs-yES"/>
+                <outlet property="img_Product" destination="TmE-8S-2ml" id="K2i-Ec-KhZ"/>
+                <outlet property="lbl_ProductBrand" destination="TVW-Uu-Tus" id="L5x-mC-lJZ"/>
+                <outlet property="lbl_ProductName" destination="QLc-oW-6bV" id="WdZ-aj-dvc"/>
+                <outlet property="view_Content" destination="l7Q-nq-Xqb" id="yKA-7c-BAT"/>
+                <outlet property="view_Selection" destination="byA-tB-gBa" id="Dia-Ua-ihT"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="132.23388305847078"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tick_icon" width="17" height="14"/>
+    </resources>
+</document>

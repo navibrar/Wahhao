@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserInterestCell" id="pyJ-X4-JqJ" customClass="UserInterestCell" customModule="ConsumerReward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blk-hg-cSg">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toys &amp; Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uQ-U0-3yW">
+                                <rect key="frame" x="8" y="0.0" width="126" height="45"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.13725490200000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0uQ-U0-3yW" firstAttribute="top" secondItem="blk-hg-cSg" secondAttribute="top" id="J8X-Ac-qRs"/>
+                            <constraint firstAttribute="bottom" secondItem="0uQ-U0-3yW" secondAttribute="bottom" id="JhC-8G-dq6"/>
+                            <constraint firstItem="0uQ-U0-3yW" firstAttribute="leading" secondItem="blk-hg-cSg" secondAttribute="leading" constant="8" id="QRu-3f-diQ"/>
+                            <constraint firstAttribute="trailing" secondItem="0uQ-U0-3yW" secondAttribute="trailing" constant="8" id="QUk-bb-8Im"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDm-Xo-CYE">
+                        <rect key="frame" x="119" y="22" width="26" height="26"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_category_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-kE-8ue">
+                                <rect key="frame" x="3" y="3" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="pDO-Ve-yi5"/>
+                                    <constraint firstAttribute="height" constant="20" id="v9Q-kJ-vbp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GuD-kE-8ue" secondAttribute="trailing" constant="3" id="3yi-sB-q6N"/>
+                            <constraint firstAttribute="height" constant="26" id="PhH-JE-Prt"/>
+                            <constraint firstAttribute="bottom" secondItem="GuD-kE-8ue" secondAttribute="bottom" constant="3" id="euA-eg-dDe"/>
+                            <constraint firstAttribute="width" constant="26" id="q3U-ll-0w6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uDm-Xo-CYE" secondAttribute="trailing" id="8fe-se-sa4"/>
+                <constraint firstAttribute="bottom" secondItem="blk-hg-cSg" secondAttribute="bottom" constant="3" id="FGm-2z-U4g"/>
+                <constraint firstItem="blk-hg-cSg" firstAttribute="leading" secondItem="pyJ-X4-JqJ" secondAttribute="leading" id="Gjr-Gf-5lt"/>
+                <constraint firstAttribute="bottom" secondItem="uDm-Xo-CYE" secondAttribute="bottom" id="KZ0-hK-NUm"/>
+                <constraint firstAttribute="trailing" secondItem="blk-hg-cSg" secondAttribute="trailing" constant="3" id="M2I-rR-Rru"/>
+                <constraint firstItem="blk-hg-cSg" firstAttribute="top" secondItem="pyJ-X4-JqJ" secondAttribute="top" id="q9I-yc-sog"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="flD-eH-GGl"/>
+            <connections>
+                <outlet property="lbl_Title" destination="0uQ-U0-3yW" id="JLi-oz-gkO"/>
+                <outlet property="view_Back" destination="blk-hg-cSg" id="qnE-vI-Y6P"/>
+                <outlet property="view_Selection" destination="uDm-Xo-CYE" id="YLg-Xa-wxO"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check_category_icon" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="ConsumerReward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0A-4o-A0E">
+                        <rect key="frame" x="12" y="14" width="45" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Ab8-GD-Wq0"/>
+                            <constraint firstAttribute="width" constant="45" id="Pda-7I-emU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olg-L1-Vwr">
+                        <rect key="frame" x="67" y="11" width="187.5" height="31"/>
+                        <string key="text">davidblake and 3 others
+started following you.</string>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="voq-ja-TxK">
+                        <rect key="frame" x="69" y="48" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="COC-Za-JTw"/>
+                            <constraint firstAttribute="height" constant="11" id="cIz-z0-o6J"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vse-1g-Fee">
+                        <rect key="frame" x="259" y="24" width="100" height="26"/>
+                        <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="QPi-ED-VTf"/>
+                            <constraint firstAttribute="height" constant="26" id="lw3-Lx-xee"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                        <state key="normal" title="FOLLOW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-XQ-BD5">
+                        <rect key="frame" x="85" y="46.5" width="29" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="1zI-TP-CZr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-do-ZfS">
+                        <rect key="frame" x="16" y="73" width="343" height="0.5"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.23529411764705882" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="7Me-og-tfp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.066666666669999999" green="0.13725490200000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="hDZ-do-ZfS" firstAttribute="top" secondItem="voq-ja-TxK" secondAttribute="bottom" constant="14" id="2EQ-oa-WSM"/>
+                    <constraint firstAttribute="trailing" secondItem="vse-1g-Fee" secondAttribute="trailing" constant="16" id="6wc-7a-VtO"/>
+                    <constraint firstAttribute="bottom" secondItem="hDZ-do-ZfS" secondAttribute="bottom" id="87k-sY-BpR"/>
+                    <constraint firstItem="x0A-4o-A0E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="AI6-Ep-cKd"/>
+                    <constraint firstItem="vse-1g-Fee" firstAttribute="leading" secondItem="olg-L1-Vwr" secondAttribute="trailing" constant="4.5" id="C2e-RT-RuE"/>
+                    <constraint firstItem="hDZ-do-ZfS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="D4v-Zs-4HI"/>
+                    <constraint firstItem="x0A-4o-A0E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OVh-La-g91"/>
+                    <constraint firstItem="olg-L1-Vwr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="XH8-iF-6ii"/>
+                    <constraint firstItem="Prc-XQ-BD5" firstAttribute="centerY" secondItem="voq-ja-TxK" secondAttribute="centerY" id="YkR-iP-0qE"/>
+                    <constraint firstAttribute="trailing" secondItem="hDZ-do-ZfS" secondAttribute="trailing" constant="16" id="a6k-uB-3Op"/>
+                    <constraint firstItem="voq-ja-TxK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="olg-L1-Vwr" secondAttribute="bottom" constant="6" id="dnh-nH-SIh"/>
+                    <constraint firstItem="voq-ja-TxK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="69" id="fjD-aU-nCb"/>
+                    <constraint firstItem="Prc-XQ-BD5" firstAttribute="leading" secondItem="voq-ja-TxK" secondAttribute="trailing" constant="5" id="nSR-ax-YGG"/>
+                    <constraint firstItem="vse-1g-Fee" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="o5u-h0-tkx"/>
+                    <constraint firstItem="olg-L1-Vwr" firstAttribute="leading" secondItem="x0A-4o-A0E" secondAttribute="trailing" constant="10" id="yua-rA-RGQ"/>
+                    <constraint firstItem="hDZ-do-ZfS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="x0A-4o-A0E" secondAttribute="bottom" constant="14" id="zZb-su-cj0"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="6"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btn_Follow" destination="vse-1g-Fee" id="ZLo-8d-F03"/>
+                <outlet property="constraint_FollowBtnWidth" destination="QPi-ED-VTf" id="ynw-Y1-Tft"/>
+                <outlet property="img_User" destination="x0A-4o-A0E" id="zWV-Nz-A6w"/>
+                <outlet property="lbl_Description" destination="olg-L1-Vwr" id="k4o-0B-LaR"/>
+                <outlet property="lbl_Time" destination="Prc-XQ-BD5" id="Z6Y-gl-3eh"/>
+            </connections>
+            <point key="canvasLocation" x="-249" y="-16"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock_icon" width="14" height="14"/>
+    </resources>
+</document>

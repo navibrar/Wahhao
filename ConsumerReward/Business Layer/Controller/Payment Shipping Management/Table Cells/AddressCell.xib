@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="78" id="KGk-i7-Jjw" customClass="AddressCell" customModule="ConsumerReward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-Ra-pvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marcus D Fleming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-2i-6lO">
+                                <rect key="frame" x="12" y="15.5" width="122.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upQ-D0-ve0">
+                                <rect key="frame" x="12" y="36.5" width="146" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="32" id="3HD-zE-GfD"/>
+                                </constraints>
+                                <string key="text">1567, Pearl Street,Sacramento, CA 95823</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.13725490200000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="upQ-D0-ve0" firstAttribute="top" secondItem="gYa-2i-6lO" secondAttribute="bottom" constant="5" id="8Uv-zu-a9T"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="upQ-D0-ve0" secondAttribute="trailing" constant="12" id="QWM-9b-qGu"/>
+                            <constraint firstItem="gYa-2i-6lO" firstAttribute="leading" secondItem="gy7-Ra-pvm" secondAttribute="leading" constant="12" id="R5H-CT-ooF"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gYa-2i-6lO" secondAttribute="trailing" constant="12" id="ijZ-tu-ulD"/>
+                            <constraint firstItem="upQ-D0-ve0" firstAttribute="leading" secondItem="gYa-2i-6lO" secondAttribute="leading" id="pAd-Hm-5po"/>
+                            <constraint firstItem="gYa-2i-6lO" firstAttribute="top" secondItem="gy7-Ra-pvm" secondAttribute="top" constant="15" id="vnR-io-hqp"/>
+                            <constraint firstAttribute="height" constant="78" id="xcY-G5-ll5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gy7-Ra-pvm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B1C-AF-7dA"/>
+                    <constraint firstItem="gy7-Ra-pvm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WST-Cz-hfl"/>
+                    <constraint firstAttribute="trailing" secondItem="gy7-Ra-pvm" secondAttribute="trailing" id="tHE-lX-sxY"/>
+                    <constraint firstAttribute="bottom" secondItem="gy7-Ra-pvm" secondAttribute="bottom" id="zsd-zd-p0i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbl_Address" destination="upQ-D0-ve0" id="7Db-Xf-lLO"/>
+                <outlet property="lbl_Name" destination="gYa-2i-6lO" id="9PH-Ce-7y0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

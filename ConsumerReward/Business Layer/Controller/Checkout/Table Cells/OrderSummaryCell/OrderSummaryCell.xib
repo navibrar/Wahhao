@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderSummaryCell" rowHeight="41" id="D1m-fE-uvx" customClass="OrderSummaryCell" customModule="ConsumerReward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D1m-fE-uvx" id="fVa-45-cBc">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="40.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2il-p7-Gvx">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-sK-itA">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.074509803920000006" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kN9-FC-n2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2Y-5y-Tuq">
+                                <rect key="frame" x="12" y="1" width="47" height="42.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$999.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-Oi-nnh">
+                                <rect key="frame" x="275.5" y="1" width="43.5" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="ihd-ss-ydt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.13725490196078433" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g2Y-5y-Tuq" secondAttribute="bottom" id="3vZ-cz-4Yn"/>
+                            <constraint firstItem="uRd-sK-itA" firstAttribute="top" secondItem="2il-p7-Gvx" secondAttribute="top" id="5hk-rC-xsl"/>
+                            <constraint firstAttribute="trailing" secondItem="uRd-sK-itA" secondAttribute="trailing" id="5me-BC-E0Q"/>
+                            <constraint firstItem="QbB-Oi-nnh" firstAttribute="top" secondItem="uRd-sK-itA" secondAttribute="bottom" id="80B-6J-Jup"/>
+                            <constraint firstAttribute="height" constant="43" id="BX0-Hf-WhQ"/>
+                            <constraint firstItem="uRd-sK-itA" firstAttribute="leading" secondItem="2il-p7-Gvx" secondAttribute="leading" id="LJh-pS-crn"/>
+                            <constraint firstItem="g2Y-5y-Tuq" firstAttribute="leading" secondItem="2il-p7-Gvx" secondAttribute="leading" constant="12" id="PaA-7e-ZYZ"/>
+                            <constraint firstAttribute="bottom" secondItem="QbB-Oi-nnh" secondAttribute="bottom" id="VCf-gM-XEB"/>
+                            <constraint firstAttribute="trailing" secondItem="QbB-Oi-nnh" secondAttribute="trailing" constant="24" id="Zpb-Xz-whi"/>
+                            <constraint firstItem="g2Y-5y-Tuq" firstAttribute="top" secondItem="uRd-sK-itA" secondAttribute="bottom" id="cQ5-U5-5VW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2il-p7-Gvx" secondAttribute="bottom" id="0YQ-ZX-T3m"/>
+                    <constraint firstAttribute="trailing" secondItem="2il-p7-Gvx" secondAttribute="trailing" id="Hyn-qG-LS4"/>
+                    <constraint firstItem="2il-p7-Gvx" firstAttribute="top" secondItem="fVa-45-cBc" secondAttribute="top" id="QmE-cz-wkb"/>
+                    <constraint firstItem="2il-p7-Gvx" firstAttribute="leading" secondItem="fVa-45-cBc" secondAttribute="leading" id="Zab-4C-tRF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="constraint_SeperatorLeading" destination="LJh-pS-crn" id="kdc-k1-8aw"/>
+                <outlet property="constraint_SeperatorTrailing" destination="5me-BC-E0Q" id="hMm-X5-RsE"/>
+                <outlet property="lbl_Description" destination="QbB-Oi-nnh" id="i1e-f7-Fif"/>
+                <outlet property="lbl_Title" destination="g2Y-5y-Tuq" id="4it-4D-T1B"/>
+                <outlet property="view_Back" destination="2il-p7-Gvx" id="Xkq-pl-LLz"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="63.418290854572717"/>
+        </tableViewCell>
+    </objects>
+</document>
